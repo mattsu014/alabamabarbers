@@ -1,0 +1,136 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Alabama Barbers - Dark Premium Theme based on logo */
+  --background: #1a1a1a;
+  --foreground: #e8e8e8;
+  --card: #252525;
+  --card-foreground: #e8e8e8;
+  --popover: #252525;
+  --popover-foreground: #e8e8e8;
+  --primary: #c0c0c0;
+  --primary-foreground: #1a1a1a;
+  --secondary: #333333;
+  --secondary-foreground: #e8e8e8;
+  --muted: #2a2a2a;
+  --muted-foreground: #a0a0a0;
+  --accent: #c41e3a;
+  --accent-foreground: #ffffff;
+  --destructive: #c41e3a;
+  --destructive-foreground: #ffffff;
+  --border: #3a3a3a;
+  --input: #2a2a2a;
+  --ring: #c0c0c0;
+  --chart-1: #c41e3a;
+  --chart-2: #1e3a8a;
+  --chart-3: #c0c0c0;
+  --chart-4: #e8e8e8;
+  --chart-5: #4a4a4a;
+  --radius: 0.5rem;
+  --barber-red: #c41e3a;
+  --barber-blue: #1e3a8a;
+  --barber-white: #ffffff;
+  --silver: #c0c0c0;
+  --charcoal: #2a2a2a;
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #e8e8e8;
+  --sidebar-primary: #c0c0c0;
+  --sidebar-primary-foreground: #1a1a1a;
+  --sidebar-accent: #2a2a2a;
+  --sidebar-accent-foreground: #e8e8e8;
+  --sidebar-border: #3a3a3a;
+  --sidebar-ring: #c0c0c0;
+}
+
+.dark {
+  --background: #1a1a1a;
+  --foreground: #e8e8e8;
+  --card: #252525;
+  --card-foreground: #e8e8e8;
+  --popover: #252525;
+  --popover-foreground: #e8e8e8;
+  --primary: #c0c0c0;
+  --primary-foreground: #1a1a1a;
+  --secondary: #333333;
+  --secondary-foreground: #e8e8e8;
+  --muted: #2a2a2a;
+  --muted-foreground: #a0a0a0;
+  --accent: #c41e3a;
+  --accent-foreground: #ffffff;
+  --destructive: #c41e3a;
+  --destructive-foreground: #ffffff;
+  --border: #3a3a3a;
+  --input: #2a2a2a;
+  --ring: #c0c0c0;
+  --chart-1: #c41e3a;
+  --chart-2: #1e3a8a;
+  --chart-3: #c0c0c0;
+  --chart-4: #e8e8e8;
+  --chart-5: #4a4a4a;
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #e8e8e8;
+  --sidebar-primary: #c0c0c0;
+  --sidebar-primary-foreground: #1a1a1a;
+  --sidebar-accent: #2a2a2a;
+  --sidebar-accent-foreground: #e8e8e8;
+  --sidebar-border: #3a3a3a;
+  --sidebar-ring: #c0c0c0;
+}
+
+@theme inline {
+  --font-sans: 'Playfair Display', 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-barber-red: var(--barber-red);
+  --color-barber-blue: var(--barber-blue);
+  --color-barber-white: var(--barber-white);
+  --color-silver: var(--silver);
+  --color-charcoal: var(--charcoal);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
