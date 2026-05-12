@@ -78,7 +78,8 @@ O projeto foi desenvolvido utilizando a metodologia ágil **Kanban**, com organi
 
 ## 👨‍💻 Equipe
 
-* Cristiane Brandim
+* Rodrigo Rodrigues
+* Saulo Rocha
 * Mateus Valentim
 
 ---
